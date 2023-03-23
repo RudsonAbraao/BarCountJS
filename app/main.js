@@ -17,6 +17,7 @@ function resultadoNaTela(dose){
     const elementoResultado = document.getElementById('calculoResposta');
     elementoResultado.innerHTML =`
     <h2 class="resposta">Contém ${dose} dose(s)</h2>
+    <h2 class="resposta">Contém ${parseInt(dose*50)} ml</h2>
     `
 }
 

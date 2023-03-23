@@ -1,10 +1,13 @@
 const btnCalcular = document.getElementById('btn-calcular');
+const doses = [{dose: 1, cm: 1.5, limite: 2.5}, {dose: 2, cm: 2.5, limite: 3.5}]
+
 
 
 btnCalcular.addEventListener('click', ()=>{
     const medida = document.getElementById('medida').value;
     console.log(medida);
     let dose = calculoMedida(medida);
+    console.log(dose);
     resultadoNaTela(dose);
 });
 
@@ -16,19 +19,15 @@ function resultadoNaTela(dose){
 }
 
 function calculoMedida(cm){
-    let dose = 0;
-    if(cm > 0 && cm < 1.5){
-        dose = cm/1.5
-    }
-    if( cm == 1.5){
-        dose = 1
-    }
-    if(cm > 1.5 && cm < 2.5 ){
-        dose = cm - 1.5
-        dose = dose + 1
-    }
-    if( cm == 2.5){
-        dose = 2
-    }
-    return dose;
+    let doseDaGarrafa = 0;
+    doses.forEach(dose => {
+        if(cm == dose.cm){
+            console.log('deu certo');
+            doseDaGarrafa = dose.dose;
+            console.log(doseDaGarrafa);
+        } if(cm>dose.cm && cm < dose.limite){
+            doseDaGarrafa = (cm - dose.cm) + dose.dose;
+        }
+    });
+    return doseDaGarrafa
 }

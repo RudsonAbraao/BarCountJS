@@ -4,18 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    
     <title>Bar count</title>
 </head>
 <body>
-    <div class="calculo-dose" id="calculo">
-        <label for="medida">Medida (cm):</label>
-        <input type="number" name="medida" id="medida">
-        <button id="btn-calcular">Calcular</button>
-    </div>
-    <div class="calculo__resposta" id="calculoResposta">
-        
-
-    </div>
+    <main class="principal">
+        <h1 class="titulo">Prótotipo ypioca</h1>
+        <div class="calculo-dose" id="calculo">
+            <input type="number" name="medida" id="medida" class="input-medida" placeholder="Medida (cm)">
+            <button id="btn-calcular">Calcular</button>
+        </div>
+        <div class="calculo__resposta" id="calculoResposta">
+            
+        </div>
+    </main>
 
 
     <script src="./app/main.js"></script>

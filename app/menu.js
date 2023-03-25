@@ -12,21 +12,27 @@ btnMenu.addEventListener('click', ()=>{
 
 btnYpioca.addEventListener('click', ()=>{
     titulo.innerHTML= 'Ypíoca 965ml';
+    elementoResultado.innerHTML= '';
 });
 btnSmirnoff.addEventListener('click', ()=>{
     titulo.innerHTML= 'Smirnoff';
+    elementoResultado.innerHTML= '';
 });
 
 
 btnAbsolut.addEventListener('click', ()=>{
     titulo.innerHTML= 'Absolut 1L';
+    elementoResultado.innerHTML= '';
 });
 btnGordons.addEventListener('click', ()=>{
     titulo.innerHTML= 'Gordons';
+    elementoResultado.innerHTML= '';
 });
 btnJoseCuervo.addEventListener('click', ()=>{
     titulo.innerHTML= 'Jose Cuervo';
+    elementoResultado.innerHTML= '';
 });
 btnBacardi.addEventListener('click', ()=>{
     titulo.innerHTML= 'Bacardi';
+    elementoResultado.innerHTML= '';
 });

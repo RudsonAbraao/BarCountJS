@@ -1,3 +1,4 @@
+const elementoResultado = document.getElementById('calculoResposta');
 const btnCalcular = document.getElementById('btn-calcular');
 const ypioca = [{dose: 1, cm: 1.5, limite: 2.5}, {dose: 2, cm: 2.5, limite: 3.5}, {dose: 3, cm: 3.5, limite: 4.5},
      {dose: 4, cm: 4.5, limite: 5.8}, {dose: 5, cm: 5.8, limite: 6.8}, {dose: 6, cm: 6.8, limite: 7.8},
@@ -14,7 +15,6 @@ btnCalcular.addEventListener('click', ()=>{
 });
 
 function resultadoNaTela(dose){
-    const elementoResultado = document.getElementById('calculoResposta');
     elementoResultado.innerHTML =`
     <h2 class="resposta">Contém ${dose} dose(s)</h2>
     <h2 class="resposta">Contém ${parseInt(dose*50)} ml</h2>

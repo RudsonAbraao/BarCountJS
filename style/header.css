@@ -1,0 +1,19 @@
+.cabecalho{
+    display: flex;
+    background-color: gray;
+    height: 40px;
+    width: 100vw;
+    align-items: center;
+    z-index: 2;
+}
+
+.titulo__principal{
+    font-size: 2em;
+    font-weight: 700;
+    width: 100%;
+    text-align: center;
+}
+
+.menu{
+    position: absolute;
+}

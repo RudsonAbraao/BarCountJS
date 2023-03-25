@@ -1,0 +1,40 @@
+.btn__menu{
+    left: 5px;
+    position: relative;
+}
+
+.menu__lateral.oculto{
+    width: 30vw;
+    
+}
+
+.menu__lateral{
+    left: 0;
+    top: 40px;
+    height: 25vh;
+    position: absolute;
+    background-color: gray;
+    width: 0px;
+    transition: .7s;
+    overflow: hidden auto;
+}
+
+.menu__lista{
+    display: flex;
+    flex-direction: column;
+    
+}
+.menu__lista--item{
+    height: 30px;
+    white-space: nowrap;
+    border-bottom: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.principal{
+    position: absolute;
+    z-index: -1;
+}
+

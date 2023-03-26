@@ -1,0 +1,26 @@
+.calculo-dose{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #F3DEBA;
+    color: black;
+    width: 80vw;
+    min-height: 260px;
+    border-radius: 10px;
+    border: solid black 2px;
+}
+
+.input-medida{
+    height: 2em;
+    width: 25vw;
+    border-radius: 7px;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.resposta{
+    margin-top: 2em;
+    font-size: 1.5em;
+    font-weight: 700;
+}

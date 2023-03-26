@@ -30,13 +30,17 @@
     </div>
 
     <main class="principal" id="telaPrincipal">
-        <h1 class="titulo" id="grfSelecionada">Selecione uma garrafa</h1>
-        <div class="calculo-dose" id="calculo">
-            <input type="number" name="medida" id="medida" class="input-medida" placeholder="Medida (cm)">
-            <button id="btn-calcular">Calcular</button>
-        </div>
-        <div class="calculo__resposta" id="calculoResposta">
+        <div class="principal__container">
+            <h1 class="titulo" id="grfSelecionada">Selecione uma garrafa</h1>
+            <div class="calculo-dose" id="calculo">
+                <input type="number" name="medida" id="medida" class="input-medida" placeholder="Medida (cm)">
+                <button id="btn-calcular">Calcular</button>
             
+                <div class="calculo__resposta" id="calculoResposta">
+                    <h2 class="resposta">Contém ... dose(s)</h2>
+                    <h2 class="resposta">Contém ... ml</h2>
+                </div>
+            </div>
         </div>
     </main>
 

@@ -4,19 +4,24 @@
 }
 
 .menu__lateral.oculto{
-    width: 30vw;
+    width: 50vw;
+    border-bottom-right-radius: 10px;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
     
 }
 
 .menu__lateral{
     left: 0;
-    top: 40px;
-    height: 25vh;
+    top: 50px;
+    height: 50vh;
     position: absolute;
-    background-color: gray;
+    background-color: #8D7B68;
     width: 0px;
     transition: .7s;
     overflow: hidden auto;
+    z-index: 3;
+    box-shadow: black 0px 5px 10px;
 }
 
 .menu__lista{

@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
 @import url(./header.css);
 @import url(./menu.css);
+@import url(./calculo.css);
 :root{
     --fonte-principal: 'Nunito', sans-serif;
     --cor-de-fundo: rgb(37, 37, 37);
@@ -13,44 +14,37 @@ body{
     font-family: var(--fonte-principal);
     background-color: var(--cor-de-fundo);
     color: var(--cor-principal);
+    background-color: #8D7B68;
+    height: 100vh;
+    z-index: -2;
+    position: relative;
 }
 
 .titulo{
     font-size: 3em;
     font-weight: 700;
-    margin: 1em 0 2em 0;
     text-align: center;
 }
 
 .principal {
-    height: 100px;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
+}
+
+.principal__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
 }
 
 .botoes{
     margin-bottom: 1em;
 }
 
-.calculo-dose{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
 
-.input-medida{
-    height: 1.5em;
-    border-radius: 7px;
-    text-align: center;
-    margin-bottom: 1em;
-}
-
-.resposta{
-    margin-top: 2em;
-    font-size: 1.5em;
-    font-weight: 700;
-}
-
-.logo{
-    width: 40px;
-}

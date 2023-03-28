@@ -25,6 +25,9 @@ body{
     font-weight: 700;
     text-align: center;
 }
+.titulo::first-letter{
+    text-transform: uppercase;
+}
 
 .principal {
     height: 100vh;

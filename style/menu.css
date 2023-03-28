@@ -30,12 +30,17 @@
     
 }
 .menu__lista--item{
-    height: 30px;
+    height: 40px;
     white-space: nowrap;
     border-bottom: 2px solid black;
     display: flex;
     align-items: center;
     justify-content: center;
+    
+    text-transform: uppercase;
+}
+.menu__lista--item::first-letter{
+    color: black;
 }
 
 .principal{

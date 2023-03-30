@@ -1,8 +1,23 @@
 const btnMenu = document.getElementById('btnMenu');
-const bebida = document.getElementById('grfSelecionada');
+const menuLateral = document.getElementById('menuLateral');
 
+const bebida = document.getElementById('grfSelecionada');
 let nodeListBtn = document.querySelectorAll('.btn');
 const botoes = Array.from(nodeListBtn);
+
+
+btnMenu.addEventListener('click', ()=>{
+    menuLateral.classList.toggle('ativo');
+});
+
+botoes.forEach(botao => {
+    botao.addEventListener('click', ()=>{
+        bebida.innerHTML= botao.innerHTML;
+        buscaGarrafas(botao)
+    })
+});
+
+
 
 // botoes.forEach(botao => {
 //     botao.addEventListener('click', ()=>{
@@ -16,9 +31,3 @@ const botoes = Array.from(nodeListBtn);
 //         return bebidaSelecionada;
 //     })
 // });
-
-btnMenu.addEventListener('click', ()=>{
-    menuLateral.classList.toggle('oculto');
-});
-
-

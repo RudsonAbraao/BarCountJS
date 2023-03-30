@@ -3,7 +3,7 @@
     position: relative;
 }
 
-.menu__lateral.oculto{
+.menu__lateral.ativo{
     width: 50vw;
     border-bottom-right-radius: 10px;
     border-bottom: 1px solid black;

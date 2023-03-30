@@ -1,4 +1,6 @@
-const apiUrl = 'https://gist.githubusercontent.com/RudsonAbraao/b6fc3b9d69ec4c6f45828761f8ca95ec/raw/77d5e524c618520248085036ad7a46a1cb74fd23/garrafas.json';
+const apiUrl = 'https://gist.githubusercontent.com/RudsonAbraao/16a2bd32ba3064ddc516223b8871e30c/raw/ede8936646cfafa3896b1b2d542c6c38c372039a/garrafas2.0.json';
+
+let bebidaSelecionada;
 
 async function buscaGarrafas(botao){
     try{
@@ -17,15 +19,5 @@ async function buscaGarrafas(botao){
     } catch(erro){
         console.log(erro);
     }
-}
+};
 
-
-
-
-
-botoes.forEach(botao => {
-    botao.addEventListener('click', ()=>{
-        bebida.innerHTML= botao.innerHTML;
-        buscaGarrafas(botao)
-    })
-});

@@ -1,5 +1,42 @@
 const elementoResultado = document.getElementById('calculoResposta');
+
+
 const btnCalcular = document.getElementById('btn-calcular');
+
+
+
+btnCalcular.addEventListener('click', ()=>{
+    const medida = document.getElementById('medida').value;
+    let dose = calculoMedida(medida,bebidaSelecionada);
+    console.log(bebidaSelecionada);
+    resultadoNaTela(dose);
+});
+
+function resultadoNaTela(dose){
+    elementoResultado.innerHTML =`
+    <h2 class="resposta">Contém ${dose} dose(s)</h2>
+    <h2 class="resposta">Contém ${parseInt(dose*50)} ml</h2>
+    `
+}
+
+function calculoMedida(cm, bebida){
+    let doseDaGarrafa = 0;
+    bebida.doses.forEach(dose => {
+        if(cm == dose.inicio){
+            console.log('deu certo');
+            doseDaGarrafa = dose.dose;
+            console.log(doseDaGarrafa);
+        } if(cm>dose.inicio && cm < dose.fim){
+            doseDaGarrafa = (cm - dose.inicio) / (dose.fim - dose.inicio) + dose.dose;
+        }
+    });
+    return Number(doseDaGarrafa.toFixed(2))
+}
+
+// const bebidas = [ypioca, smirnoff]
+
+// const smirnoff = {nome: 'smirnoff', doses:[{dose: 1, cm: 2.5, limite: 3.5}]}
+
 // const ypioca = {nome: 'ypioca',doses:[{dose: 1, cm: 1.5, limite: 2.5},
 //     {dose: 2, cm: 2.5, limite: 3.5},
 //     {dose: 3, cm: 3.5, limite: 4.5},
@@ -19,38 +56,3 @@ const btnCalcular = document.getElementById('btn-calcular');
 //     {dose: 17, cm: 18, limite: 19.5},
 //     {dose: 18, cm: 19.5, limite: 23},
 //     {dose: 19, cm: 23, limite: 0}]}
-// const smirnoff = {nome: 'smirnoff', doses:[{dose: 1, cm: 2.5, limite: 3.5}]}
-
-let bebidaSelecionada;
-// const bebidas = [ypioca, smirnoff]
-
-btnCalcular.addEventListener('click', ()=>{
-    const medida = document.getElementById('medida').value;
-    let dose = calculoMedida(medida,bebidaSelecionada);
-    console.log(bebidaSelecionada);
-    resultadoNaTela(dose);
-});
-
-function resultadoNaTela(dose){
-    elementoResultado.innerHTML =`
-    <h2 class="resposta">Contém ${dose} dose(s)</h2>
-    <h2 class="resposta">Contém ${parseInt(dose*50)} ml</h2>
-    `
-}
-
-function calculoMedida(cm, bebida){
-    let doseDaGarrafa = 0;
-    bebida.doses.forEach(dose => {
-        console.log(bebida.doses);
-        if(cm == dose.inicio){
-            console.log('deu certo');
-            doseDaGarrafa = dose.dose;
-            console.log(doseDaGarrafa);
-        } if(cm>dose.inicio && cm < dose.fim){
-            doseDaGarrafa = (cm - dose.inicio) / (dose.fim - dose.inicio) + dose.dose;
-        }
-    });
-    return Number(doseDaGarrafa.toFixed(2))
-}
-
-

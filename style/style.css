@@ -2,6 +2,7 @@
 @import url(./header.css);
 @import url(./menu.css);
 @import url(./calculo.css);
+@import url(./calculadora.css);
 :root{
     --fonte-principal: 'Nunito', sans-serif;
     --cor-de-fundo: rgb(37, 37, 37);

@@ -1,0 +1,46 @@
+.calculadora__aba{
+    right: 0;
+    top: 50px;
+    height: 93.7vh;
+    position: absolute;
+    background-color: #8D7B68;
+    width: 50vw;
+    transition: .7s;
+    overflow: hidden;
+    z-index: 3;
+    box-shadow: black 0px 5px 10px;
+    border-bottom-left-radius: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.calculadora__lista{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden auto;
+}
+
+.calculadora__lista--item{
+    height: 40px;
+    white-space: nowrap;
+    border-bottom: 2px solid black;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.calculadora__total{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    border-top: solid 4px black;
+    background-color: #8D7B68;
+}
+
+.calculadora__total--resultado{
+    font-size: 1.5em;
+    text-align: center;
+    padding: 10px;
+    z-index: 4;
+}

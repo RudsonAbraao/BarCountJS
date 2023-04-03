@@ -15,6 +15,7 @@
     <header class="cabecalho">
         <img src="https://img.icons8.com/ios-filled/30/000000/menu-rounded.png" id="btnMenu" class="btn__menu"/>
         <h1 class="titulo__principal">Bar Count</h1>
+        <img src="https://img.icons8.com/ios-glyphs/30/null/plus-slash-minus.png" id="btnCalc" class="btn__calc"/>
     </header>
 
     <div class="menu__lateral" id="menuLateral">
@@ -43,46 +44,15 @@
             </div>
 
             <div class="adicionar__garrafas">
-                <button>Adicionar garrafa</button>
+                <button class="btn__add" id="btnAdd">Adicionar garrafa à contagem<img src="https://img.icons8.com/ios-glyphs/30/null/plus-slash-minus.png"/></button>
             </div>
         </div>
     </main>
 
-    <div class="calculadora__aba">
-        <div class="calculadora__lista">
-            <ul>
-                <li class="calculadora__lista--item">01 Garrafa: 5 Ds <button>X</button></li>
-                <li class="calculadora__lista--item">01 Garrafa: 5 Ds <button>X</button></li>
-                <li class="calculadora__lista--item">01 Garrafa: 5 Ds <button>X</button></li>
-                <li class="calculadora__lista--item">01 Garrafa: 5 Ds <button>X</button></li>
-                <li class="calculadora__lista--item">01 Garrafa: 5 Ds <button>X</button></li>
-                <li class="calculadora__lista--item">01 Garrafa: 5 Ds <button>X</button></li>
-                <li class="calculadora__lista--item">01 Garrafa: 5 Ds <button>X</button></li>
-                <li class="calculadora__lista--item">01 Garrafa: 5 Ds <button>X</button></li>
-                <li class="calculadora__lista--item">01 Garrafa: 5 Ds <button>X</button></li>
-                <li class="calculadora__lista--item">01 Garrafa: 5 Ds <button>X</button></li>
-                <li class="calculadora__lista--item">01 Garrafa: 5 Ds <button>X</button></li>
-                <li class="calculadora__lista--item">01 Garrafa: 5 Ds <button>X</button></li>
-                <li class="calculadora__lista--item">01 Garrafa: 5 Ds <button>X</button></li>
-                <li class="calculadora__lista--item">01 Garrafa: 5 Ds <button>X</button></li>
-                <li class="calculadora__lista--item">01 Garrafa: 5 Ds <button>X</button></li>
-                <li class="calculadora__lista--item">01 Garrafa: 5 Ds <button>X</button></li>
-                <li class="calculadora__lista--item">01 Garrafa: 5 Ds <button>X</button></li>
-                <li class="calculadora__lista--item">01 Garrafa: 5 Ds <button>X</button></li>
-                <li class="calculadora__lista--item">01 Garrafa: 5 Ds <button>X</button></li>
-                <li class="calculadora__lista--item">01 Garrafa: 5 Ds <button>X</button></li>
-                <li class="calculadora__lista--item">01 Garrafa: 5 Ds <button>X</button></li>
-                <li class="calculadora__lista--item">01 Garrafa: 5 Ds <button>X</button></li>
-                <li class="calculadora__lista--item">01 Garrafa: 5 Ds <button>X</button></li>
-                <li class="calculadora__lista--item">01 Garrafa: 5 Ds <button>X</button></li>
-                <li class="calculadora__lista--item">01 Garrafa: 5 Ds <button>X</button></li>
-                <li class="calculadora__lista--item">01 Garrafa: 5 Ds <button>X</button></li>
-                <li class="calculadora__lista--item">01 Garrafa: 5 Ds <button>X</button></li>
-                <li class="calculadora__lista--item">01 Garrafa: 5 Ds <button>X</button></li>
-            </ul>   
-        </div>
+    <div class="calculadora__aba" id="abaCalc">
+        <ul class="calculadora__lista" id="calcLista"></ul>
         <div class="calculadora__total">
-            <h2 class="calculadora__total--resultado">Total: "56" Ds</h2>
+            <h2 class="calculadora__total--resultado" id="textTotal">Total: ... Ds</h2>
         </div>
     </div>
 
@@ -90,5 +60,6 @@
     <script src="./app/main.js"></script>
     <script src="./app/menu.js"></script>
     <script src="./app/buscaGarrafas.js"></script>
+    <script src="./app/calculadora.js"></script>
 </body>
 </html>

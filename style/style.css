@@ -20,6 +20,9 @@ body{
     z-index: -2;
     position: relative;
 }
+*{
+    font-family: var(--fonte-principal);
+}
 
 .titulo{
     font-size: 3em;
@@ -49,6 +52,25 @@ body{
 
 .botoes{
     margin-bottom: 1em;
+}
+
+.adicionar__garrafas{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+.btn__add{
+    height: 2em;
+    border: 0;
+    border-radius: 20px 20px 0 0;
+    width: 100%;
+    font-size: 1.5em;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
 }
 
 

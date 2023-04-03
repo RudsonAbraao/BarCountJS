@@ -13,6 +13,7 @@ btnMenu.addEventListener('click', ()=>{
 botoes.forEach(botao => {
     botao.addEventListener('click', ()=>{
         bebida.innerHTML= botao.innerHTML;
+        zerarCalc();
         buscaGarrafas(botao)
     })
 });

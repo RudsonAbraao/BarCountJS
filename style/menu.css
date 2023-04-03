@@ -4,7 +4,7 @@
 }
 
 .menu__lateral.ativo{
-    width: 50vw;
+    width: 48%;
     border-bottom-right-radius: 10px;
     border-bottom: 1px solid black;
     border-right: 1px solid black;
@@ -13,7 +13,7 @@
 
 .menu__lateral{
     left: 0;
-    top: 50px;
+    top: 8%;
     height: 50vh;
     position: absolute;
     background-color: #8D7B68;

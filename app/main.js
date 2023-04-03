@@ -1,13 +1,12 @@
 const elementoResultado = document.getElementById('calculoResposta');
-
-
 const btnCalcular = document.getElementById('btn-calcular');
+let dose = 0;
 
 
 
 btnCalcular.addEventListener('click', ()=>{
     const medida = document.getElementById('medida').value;
-    let dose = calculoMedida(medida,bebidaSelecionada);
+    dose = calculoMedida(medida,bebidaSelecionada);
     console.log(bebidaSelecionada);
     resultadoNaTela(dose);
 });

@@ -66,12 +66,14 @@ body{
     border-radius: 20px 20px 0 0;
     width: 100%;
     font-size: 1.5em;
+    font-weight: 700;
     padding: 0;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 10px;
     background-color: whitesmoke;
+    
 }
 
 

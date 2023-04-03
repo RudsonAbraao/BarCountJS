@@ -23,7 +23,7 @@ function addGarrafaCalc(){
     mostraDoseTotal();
     calcLista.innerHTML += `
         <li class="calculadora__lista--item">
-            <h3 class="calculadora__lista--item-texto">${qntGarrafa}ª Garrafa: <span id="numDose">${dose}</span> Ds</h3>
+            <h3 class="calculadora__lista--item-texto"><span class="qntGarrafa">${qntGarrafa}ª</span> Garrafa: <span id="numDose">${dose}</span> Ds</h3>
             <button id="btnDeleta" value="${dose}">X</button>
         </li>   
     `

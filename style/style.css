@@ -73,6 +73,7 @@ body{
     align-items: center;
     justify-content: center;
     background-color: whitesmoke;
+    white-space: nowrap;
     
 }
 

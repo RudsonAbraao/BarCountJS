@@ -1,7 +1,9 @@
 .btn__menu{
-    left: 5px;
-    position: relative;
+    padding: 10px;
+    width: 52px;
 }
+
+.material-icons.md-36 { font-size: 36px; }
 
 .menu__lateral.ativo{
     width: 48%;

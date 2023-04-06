@@ -1,6 +1,8 @@
+
 const elementoResultado = document.getElementById('calculoResposta');
 const btnCalcular = document.getElementById('btn-calcular');
 let dose = 0;
+
 
 
 
@@ -31,6 +33,8 @@ function calculoMedida(cm, bebida){
     });
     return Number(doseDaGarrafa.toFixed(2))
 }
+
+
 
 // const bebidas = [ypioca, smirnoff]
 

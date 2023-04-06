@@ -1,4 +1,4 @@
-const apiUrl = 'https://gist.githubusercontent.com/RudsonAbraao/16a2bd32ba3064ddc516223b8871e30c/raw/ede8936646cfafa3896b1b2d542c6c38c372039a/garrafas2.0.json';
+const apiUrl = 'https://gist.githubusercontent.com/RudsonAbraao/defe057a928835fdd711404f5f85d839/raw/6d26390c75f274361cf1aec888c66a2e8efb11fe/garrafas4.0.json';
 
 let bebidaSelecionada;
 

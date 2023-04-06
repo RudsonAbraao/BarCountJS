@@ -77,6 +77,11 @@ body{
     
 }
 
+.btn__add:active{
+    background-color: #F3DEBA;
+    color: white;
+}
+
 .invisivel {
     display: none;
 }

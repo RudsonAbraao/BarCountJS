@@ -7,7 +7,8 @@ let dose = 0;
 
 
 btnCalcular.addEventListener('click', ()=>{
-    const medida = document.getElementById('medida').value;
+    let medida = document.getElementById('medida').value;
+    console.log(medida);
     dose = calculoMedida(medida,bebidaSelecionada);
     console.log(bebidaSelecionada);
     resultadoNaTela(dose);

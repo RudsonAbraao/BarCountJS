@@ -2,7 +2,7 @@ const btnMenu = document.getElementById('btnMenu');
 const menuLateral = document.getElementById('menuLateral');
 const bebida = document.getElementById('grfSelecionada');
 let menuLista = document.getElementById('menuLista')
-let garrafas = ['Ypioca', 'Smirnoff','Absolut','Bacardi','Bacardi ouro', 'Ypioca (ouro)', 'Ypioca 150', 'Ypioca 160', 'Jose Cuervo', 'Jose Cuervo (ouro)', 'Gordons', 'Cointreau', 'Jack Daniels', 'JW Red Label', 'JW Blue Label', 'Jagermeister', 'Campari', 'Jameson', 'Malibu', 'JW Black Label', 'JW Gold Label', 'Aperol', 'Stock Curaçau Blue', 'Stock Triple Sec', 'Kahlúa', 'ciroc'];
+let garrafas = ['Ypioca', 'Smirnoff','Absolut','Bacardi','Bacardi ouro', 'Ypioca (ouro)', 'Ypioca 150', 'Ypioca 160', 'Jose Cuervo', 'Jose Cuervo (ouro)', 'Gordons', 'Cointreau', 'Jack Daniels', 'JW Red Label', 'JW Blue Label', 'Jagermeister', 'Campari', 'Jameson', 'Malibu', 'JW Black Label', 'JW Gold Label', 'Aperol', 'Stock Curaçau Blue', 'Stock Triple Sec', 'Kahlúa', 'Ciroc'];
 
 btnMenu.addEventListener('click', ativaMenu)
 

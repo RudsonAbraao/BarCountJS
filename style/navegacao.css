@@ -1,0 +1,41 @@
+.navegacao{
+    position: absolute;
+    bottom: 0;
+    height: 70px;
+    width: 100vw;
+    background-color: white;
+    border-top-right-radius: 36px;
+    border-top-left-radius: 36px;
+    /* height: 8vh; */
+    /* display: flex; */
+}
+
+.navegacao__lista{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+.btn__menu{
+    width: 50px;
+}
+
+.btn__menu:active{
+    padding: 5px;
+    border: solid black 2px;
+    border-radius: 5px;
+    background-color: gray;
+}
+
+.btn__calc{
+    width: 52px;
+}
+
+.btn__calc:active{
+    padding: 5px;
+    border: solid black 2px;
+    border-radius: 5px;
+    background-color: gray;
+}

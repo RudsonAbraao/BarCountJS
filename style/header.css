@@ -1,12 +1,12 @@
 .cabecalho{
     display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: #F3DEBA;
-    box-shadow: black 0px 5px 10px;
+    box-shadow: black 0px 1px 14px 6px;
     height: 8vh;
     width: 100vw;
-    align-items: center;
     z-index: 2;
-    justify-content: center;
 }
 
 .titulo__principal{
@@ -17,6 +17,6 @@
     color: black;
 }
 
-.menu{
+/* .menu{
     position: absolute;
-}
+} */

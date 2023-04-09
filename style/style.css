@@ -3,6 +3,7 @@
 @import url(./menu.css);
 @import url(./calculo.css);
 @import url(./calculadora.css);
+@import url(./navegacao.css);
 :root{
     --fonte-principal: 'Nunito', sans-serif;
     --cor-de-fundo: rgb(37, 37, 37);
@@ -29,7 +30,6 @@ body{
     font-size: 3em;
     font-weight: 700;
     text-align: center;
-    margin-bottom: 2em;
 }
 .titulo::first-letter{
     text-transform: uppercase;
@@ -45,6 +45,9 @@ body{
 }
 
 .principal__container{
+    position: absolute;
+    top: 8vh;
+    height: 18vh;
     display: flex;
     flex-direction: column;
     justify-content: center;

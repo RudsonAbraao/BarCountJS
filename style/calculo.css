@@ -1,13 +1,16 @@
 .calculo-dose{
+    position: absolute;
+    top: 20vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: #F3DEBA;
     color: black;
-    width: 80vw;
+    width: 100vw;
     min-height: 260px;
-    border-radius: 10px;
+    border-top-right-radius: 36px;
+    border-top-left-radius: 36px;
     border: solid black 2px;
 }
 

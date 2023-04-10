@@ -2,7 +2,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #F3DEBA;
+    /* background: linear-gradient(90deg, rgba(221,42,68,1) 0%, rgba(98,2,17,1) 85%); */
+    background: linear-gradient(15deg, rgba(221,42,68,1) 10%, rgba(98,2,17,1) 100%);
+    background-color: whitesmoke;
     box-shadow: black 0px 1px 14px 6px;
     height: 8vh;
     width: 100vw;
@@ -14,7 +16,7 @@
     font-weight: 700;
     width: 100%;
     text-align: center;
-    color: black;
+    color: whitesmoke;
 }
 
 /* .menu{

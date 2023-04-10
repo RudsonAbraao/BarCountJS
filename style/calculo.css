@@ -6,9 +6,10 @@
     justify-content: center;
     align-items: center;
     background-color: #F3DEBA;
+    background: linear-gradient(15deg, rgba(221,42,68,1) 10%, rgba(98,2,17,1) 100%);
     color: black;
     width: 100vw;
-    min-height: 67vh;
+    min-height: 68vh;
     border-top-right-radius: 36px;
     border-top-left-radius: 36px;
     box-shadow: 0px 0px 30px 2px;
@@ -56,6 +57,9 @@
 }
 
 .btn__add:active{
-    background-color: #F3DEBA;
-    color: white;
+    scale: 90%;
+}
+
+.calculo__resposta{
+    color: whitesmoke;
 }

@@ -5,8 +5,6 @@
 
 .menu__lateral.ativo{
     height: 72vh;
-
-    
 }
 
 .menu__lateral{
@@ -14,7 +12,10 @@
     bottom: 0;
     height: 0;
     position: absolute;
-    background-color: #8D7B68;
+    background: linear-gradient(15deg, rgba(221,42,68,1) 10%, rgba(98,2,17,1) 100%);
+
+
+    color: black;
     transition: 1s;
     overflow: hidden auto;
     z-index: 1;
@@ -24,32 +25,39 @@
 }
 
 .barra__pesquisa{
-    width: 90%;
+    width: 80%;
     align-self: center;
-    margin: 5px 0;
+    margin: 2em 0 3em 0;
     padding: 2px 0 2px 8px;
     border: 0;
     border-radius:  5px;
-    font-size: 0.85em;
+    font-size: 1em;
+    text-align: center;
 }
-
-.barra__pesquisa:text
 
 
 .menu__lista{
     display: flex;
     flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    margin-bottom: 90px;
     
 }
 .menu__lista--item{
     height: 40px;
     white-space: nowrap;
-    border-bottom: 2px solid black;
+    /* border: solid 1px black; */
+    border-radius: 20px;
+    width: 70%;
+    /* border-bottom: 2px solid black; */
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 0.9em;
+    font-size: 1em;
     text-transform: uppercase;
+    box-shadow: 4px 5px 10px black;
+    background-color: whitesmoke;
 }
 .menu__lista--item::first-letter{
     color: black;

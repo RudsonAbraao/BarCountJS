@@ -16,7 +16,7 @@ body{
     font-family: var(--fonte-principal);
     background-color: var(--cor-de-fundo);
     color: var(--cor-principal);
-    background-color: #8D7B68;
+    background-color: whitesmoke;
     height: 100vh;
     z-index: -2;
     position: relative;
@@ -30,6 +30,7 @@ body{
     font-size: 3em;
     font-weight: 700;
     text-align: center;
+    color: black;
 }
 .titulo::first-letter{
     text-transform: uppercase;

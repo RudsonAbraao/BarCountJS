@@ -36,7 +36,7 @@ function contaDoseTotal(){
 
 function mostraDoseTotal(){
     textoTotal.innerHTML = `
-        Total: ${totalDoses} Ds
+        Total: ${totalDoses} Ds / ${totalDoses*50} ml
     `
 };
 

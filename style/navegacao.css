@@ -3,12 +3,14 @@
     bottom: 0;
     height: 70px;
     width: 100vw;
-    background-color: white;
+    background-color: whitesmoke;
+    /* background: linear-gradient(27deg, rgba(149,80,16,1) 35%, rgba(244,149,46,1) 70%); */
+    /* background-color: rgba(149,80,16,1); */
     border-top-right-radius: 36px;
     border-top-left-radius: 36px;
     /* height: 8vh; */
     /* display: flex; */
-    z-index: 5;
+    z-index: 7;
 }
 
 .navegacao__lista{
@@ -24,19 +26,13 @@
 }
 
 .btn__menu:active{
-    padding: 5px;
-    border: solid black 2px;
-    border-radius: 5px;
-    background-color: gray;
+    scale: 80%;
 }
 
 .btn__calc{
-    width: 52px;
+    width: 40px;
 }
 
 .btn__calc:active{
-    padding: 5px;
-    border: solid black 2px;
-    border-radius: 5px;
-    background-color: gray;
+    scale: 80%;
 }

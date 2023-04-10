@@ -4,26 +4,23 @@
 
 
 .menu__lateral.ativo{
-    width: 48%;
-    border-bottom-right-radius: 10px;
-    border-bottom: 1px solid black;
-    border-right: 1px solid black;
+    height: 72vh;
+
     
 }
 
 .menu__lateral{
-    left: 0;
-    top: 8%;
-    height: 50vh;
+    width: 100%;
+    bottom: 0;
+    height: 0;
     position: absolute;
     background-color: #8D7B68;
-    width: 0px;
-    transition: .7s;
+    transition: 1s;
     overflow: hidden auto;
-    z-index: 3;
-    box-shadow: black 0px 5px 10px;
+    z-index: 1;
     display: flex;
     flex-direction: column;
+    border-radius: 36px 36px 0 0 ;
 }
 
 .barra__pesquisa{

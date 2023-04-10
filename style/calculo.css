@@ -8,10 +8,10 @@
     background-color: #F3DEBA;
     color: black;
     width: 100vw;
-    min-height: 260px;
+    min-height: 67vh;
     border-top-right-radius: 36px;
     border-top-left-radius: 36px;
-    border: solid black 2px;
+    box-shadow: 0px 0px 30px 2px;
 }
 
 .input-medida{
@@ -35,4 +35,27 @@
     margin-top: 2em;
     font-size: 1.5em;
     font-weight: 700;
+}
+
+
+.btn__add{
+    height: 2em;
+    border: 0;
+    border-radius: 13px;
+    width: 95%;
+    font-size: 1.5em;
+    font-weight: 700;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: whitesmoke;
+    white-space: nowrap;
+    margin-top: 2em;
+    
+}
+
+.btn__add:active{
+    background-color: #F3DEBA;
+    color: white;
 }

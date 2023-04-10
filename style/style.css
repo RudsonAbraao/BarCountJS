@@ -58,32 +58,9 @@ body{
     margin-bottom: 1em;
 }
 
-.adicionar__garrafas{
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-}
 
-.btn__add{
-    height: 2em;
-    border: 0;
-    border-radius: 20px 20px 0 0;
-    width: 100%;
-    font-size: 1.5em;
-    font-weight: 700;
-    padding: 0 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: whitesmoke;
-    white-space: nowrap;
-    
-}
 
-.btn__add:active{
-    background-color: #F3DEBA;
-    color: white;
-}
+
 
 .invisivel {
     display: none;

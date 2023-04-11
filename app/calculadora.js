@@ -4,7 +4,8 @@ const abaCalc = document.getElementById('abaCalc');
 const calcLista = document.getElementById('calcLista');
 const textoTotal = document.getElementById('textTotal');
 let qntGarrafa = 0;
-let totalDoses = 0
+let totalDoses = 0;
+let totalLitros=0;
 
 
 btnAdd.addEventListener('click', addGarrafaCalc)
@@ -32,11 +33,12 @@ function criaGarrafa(){
 
 function contaDoseTotal(){
     totalDoses += dose;
+    totalLitros = (totalDoses*50)/1000;
 };
 
 function mostraDoseTotal(){
     textoTotal.innerHTML = `
-        Total: ${totalDoses} Ds / ${totalDoses*50} ml
+        Total: ${totalDoses.toFixed(2)} Ds / ${((totalDoses*50)/1000).toFixed(2)} L
     `
 };
 

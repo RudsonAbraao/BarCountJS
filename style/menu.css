@@ -25,14 +25,15 @@
 }
 
 .barra__pesquisa{
-    width: 80%;
+    width: 50%;
     align-self: center;
     margin: 2em 0 3em 0;
-    padding: 2px 0 2px 8px;
+    padding: 8px 0;
     border: 0;
     border-radius:  5px;
     font-size: 1em;
     text-align: center;
+    font-weight: 700;
 }
 
 
@@ -48,7 +49,7 @@
     height: 40px;
     white-space: nowrap;
     /* border: solid 1px black; */
-    border-radius: 20px;
+    border-radius: 8px;
     width: 70%;
     /* border-bottom: 2px solid black; */
     display: flex;
@@ -58,6 +59,7 @@
     text-transform: uppercase;
     box-shadow: 4px 5px 10px black;
     background-color: whitesmoke;
+    font-weight: 700;
 }
 .menu__lista--item::first-letter{
     color: black;

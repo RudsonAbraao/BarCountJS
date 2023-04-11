@@ -35,9 +35,9 @@
     width: 70%;
     font-size: 1em;
     font-weight: 700;
-    gap: .7em;
+    gap: 1.2em;
     white-space: nowrap;
-    border-radius: 20px;
+    border-radius: 8px;
     box-shadow: 4px 5px 10px black;
     background-color: whitesmoke;
 }

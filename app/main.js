@@ -17,9 +17,10 @@ btnCalcular.addEventListener('click', ()=>{
 function resultadoNaTela(dose){
     elementoResultado.innerHTML =`
     <h2 class="resposta">Contém ${dose} dose(s)</h2>
-    <h2 class="resposta">Contém ${parseInt(dose*50)} ml</h2>
+    <h2 class="resposta">Contém ${Number((dose*50).toFixed(2))} ml</h2>
     `
 }
+
 
 function calculoMedida(cm, bebida){
     let doseDaGarrafa = 0;
@@ -34,6 +35,7 @@ function calculoMedida(cm, bebida){
     });
     return Number(doseDaGarrafa.toFixed(2))
 }
+
 
 
 

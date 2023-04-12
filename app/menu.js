@@ -15,7 +15,8 @@ addFunctionsBotoes(botoes);
 
 
 function ativaMenu(){
-    menuLateral.classList.toggle('ativo')
+    menuLateral.classList.toggle('ativo');
+    abaCalc.classList.remove('ativo')
 }
 
 function criaBotoes (lista){

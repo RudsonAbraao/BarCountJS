@@ -12,6 +12,7 @@ btnAdd.addEventListener('click', addGarrafaCalc)
 
 btnCalc.addEventListener('click', ()=>{
     abaCalc.classList.toggle('ativo')
+    menuLateral.classList.remove('ativo')
 })
 
 function addGarrafaCalc(){
@@ -38,9 +39,10 @@ function contaDoseTotal(){
 
 function mostraDoseTotal(){
     textoTotal.innerHTML = `
-        Total: ${totalDoses.toFixed(2)} Ds / ${((totalDoses*50)/1000).toFixed(2)} L
+        Total: ${totalDoses.toFixed(2)} Ds / ${Number(((22.5*50)/1000).toFixed(3))} L
     `
 };
+
 
 function botaoDelete(){
     let nodeListe = document.querySelectorAll('#btnDeleta');
@@ -61,7 +63,7 @@ function zerarCalc(){
     totalDoses = 0;
     qntGarrafa = 0;
     calcLista.innerHTML = "";
-    textoTotal.innerHTML = "Total: ... Ds";
+    textoTotal.innerHTML = "Total: ... Ds / ... L";
 };
 
 

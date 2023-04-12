@@ -39,7 +39,7 @@ function contaDoseTotal(){
 
 function mostraDoseTotal(){
     textoTotal.innerHTML = `
-        Total: ${totalDoses.toFixed(2)} Ds / ${Number(((22.5*50)/1000).toFixed(3))} L
+        Total: ${Number(totalDoses.toFixed(2))} Ds / ${Number(((totalDoses*50)/1000).toFixed(3))} L
     `
 };
 
@@ -66,7 +66,25 @@ function zerarCalc(){
     textoTotal.innerHTML = "Total: ... Ds / ... L";
 };
 
+function addGarrafaCheia (){
+    let dosesDaGarrafaSelecionada = [];
+    let maiordose;
+    bebidaSelecionada.doses.forEach(dose =>{
+        dosesDaGarrafaSelecionada.push(dose.dose)
+    });
+    maiordose = Math.max.apply(null, dosesDaGarrafaSelecionada);
+    console.log(maiordose);
 
+}
+
+// let dosesDaGarrafaSelecionada = [];
+// console.log(bebida.doses);
+// bebida.doses.forEach(element => {
+//     dosesDaGarrafaSelecionada.push(element.dose)
+// });
+// maiordose = Math.max.apply(null, dosesDaGarrafaSelecionada );
+// console.log(dosesDaGarrafaSelecionada);
+// console.log(maiordose);
 
 
 

@@ -29,6 +29,7 @@
     overflow: hidden auto;
     height: 52%;
     border-radius: 8px;
+    width: 71%;
 }
 
 .calculadora__lista--item{
@@ -42,7 +43,7 @@
     gap: 1.2em;
     white-space: nowrap;
     border-radius: 8px;
-    box-shadow: 4px 5px 10px black;
+    box-shadow: 0px 2px 4px black;
     background-color: whitesmoke;
 }
 

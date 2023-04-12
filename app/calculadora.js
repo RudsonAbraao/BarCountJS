@@ -3,10 +3,12 @@ const btnCalc = document.getElementById('btnCalc');
 const abaCalc = document.getElementById('abaCalc');
 const calcLista = document.getElementById('calcLista');
 const textoTotal = document.getElementById('textTotal');
+const btnAddGrfCheia = document.getElementById('btnAddGrfCheia');
 let qntGarrafa = 0;
 let totalDoses = 0;
 let totalLitros=0;
 
+btnAddGrfCheia.addEventListener('click', addGarrafaCheia)
 
 btnAdd.addEventListener('click', addGarrafaCalc)
 
@@ -23,6 +25,16 @@ function addGarrafaCalc(){
     botaoDelete();
 };
 
+function addGarrafaCheia(){
+    console.log('addGarrafaCheia');
+    qntGarrafa += 1;
+    pegaMaiorDose();
+    criaGarrafaCheia();
+    contaDosecheia();
+    mostraDoseTotal();
+    botaoDelete();
+}
+
 function criaGarrafa(){
     calcLista.innerHTML += `
         <li class="calculadora__lista--item">
@@ -32,8 +44,22 @@ function criaGarrafa(){
     `;
 };
 
+function criaGarrafaCheia(){
+    calcLista.innerHTML += `
+        <li class="calculadora__lista--item">
+            <h3 class="calculadora__lista--item-texto"><span class="qntGarrafa">${qntGarrafa}ª</span> Garrafa: <span id="numDose">${maiorDose}</span> Ds</h3>
+            <button id="btnDeleta" class="btn__deleta" value="${maiorDose}">X</button>
+        </li>   
+    `;
+}
+
+function contaDosecheia(){
+    totalDoses += maiorDose;
+}
+
 function contaDoseTotal(){
     totalDoses += dose;
+    console.log(totalDoses);
     totalLitros = (totalDoses*50)/1000;
 };
 
@@ -51,6 +77,7 @@ function botaoDelete(){
         botao.addEventListener('click',()=>{
             let elementoDelete = event.target.parentNode;
             let doseDelete = event.target.value;
+            console.log(doseDelete);
             totalDoses -= doseDelete;
             elementoDelete.remove();
             mostraDoseTotal();
@@ -59,24 +86,21 @@ function botaoDelete(){
 
 };
 
+function pegaMaiorDose(){
+    let dosesDaGarrafaSelecionada = [];
+    bebidaSelecionada.doses.forEach(dose =>{
+        dosesDaGarrafaSelecionada.push(dose.dose)
+    });
+    maiorDose = Math.max.apply(null, dosesDaGarrafaSelecionada);
+    console.log(maiorDose);
+}
+
 function zerarCalc(){
     totalDoses = 0;
     qntGarrafa = 0;
     calcLista.innerHTML = "";
     textoTotal.innerHTML = "Total: ... Ds / ... L";
 };
-
-function addGarrafaCheia (){
-    let dosesDaGarrafaSelecionada = [];
-    let maiordose;
-    bebidaSelecionada.doses.forEach(dose =>{
-        dosesDaGarrafaSelecionada.push(dose.dose)
-    });
-    maiordose = Math.max.apply(null, dosesDaGarrafaSelecionada);
-    console.log(maiordose);
-
-}
-
 // let dosesDaGarrafaSelecionada = [];
 // console.log(bebida.doses);
 // bebida.doses.forEach(element => {

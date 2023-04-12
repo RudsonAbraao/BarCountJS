@@ -1,6 +1,7 @@
 const apiUrl = 'https://gist.githubusercontent.com/RudsonAbraao/31e20fe3e1323caf29efdf8b85a4524d/raw/afc81abeaed30ca82c92c75589baa26a22b4b22e/gordons.json';
 
 let bebidaSelecionada;
+let maiorDose = 0;
 
 async function buscaGarrafas(botao){
     try{
@@ -16,8 +17,12 @@ async function buscaGarrafas(botao){
             }
         });
 
+
     } catch(erro){
         console.log(erro);
     }
 };
+
+
+
 

@@ -4,6 +4,7 @@ const abaCalc = document.getElementById('abaCalc');
 const calcLista = document.getElementById('calcLista');
 const textoTotal = document.getElementById('textTotal');
 const btnAddGrfCheia = document.getElementById('btnAddGrfCheia');
+const input = document.getElementById('medida');
 let qntGarrafa = 0;
 let totalDoses = 0;
 let totalLitros=0;
@@ -98,8 +99,16 @@ function pegaMaiorDose(){
 function zerarCalc(){
     totalDoses = 0;
     qntGarrafa = 0;
+    input.value = "";
     calcLista.innerHTML = "";
     textoTotal.innerHTML = "Total: ... Ds / ... L";
+    elementoResultado.innerHTML= `
+        <h2 class="resposta">Contém ... dose(s)</h2>
+        <h2 class="resposta">Contém ... ml</h2>
+    `
+
+
+
 };
 // let dosesDaGarrafaSelecionada = [];
 // console.log(bebida.doses);

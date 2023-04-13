@@ -1,15 +1,11 @@
 .navegacao{
     position: absolute;
     bottom: 0;
-    height: 70px;
+    height: 80px;
     width: 100vw;
     background-color: whitesmoke;
-    /* background: linear-gradient(27deg, rgba(149,80,16,1) 35%, rgba(244,149,46,1) 70%); */
-    /* background-color: rgba(149,80,16,1); */
     border-top-right-radius: 36px;
     border-top-left-radius: 36px;
-    /* height: 8vh; */
-    /* display: flex; */
     z-index: 7;
 }
 
@@ -18,11 +14,21 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 1em;
+    gap: 2em;
+}
+
+.navegacao__lista--item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+    width: 76px;
+    height: 72px;
 }
 
 .btn__menu{
     width: 50px;
+    align-self: center;
 }
 
 .btn__menu:active{
@@ -35,4 +41,10 @@
 
 .btn__calc:active{
     scale: 80%;
+}
+
+.legenda{
+    color: black;
+    font-weight: 700;
+    font-size: 1.1em;
 }

@@ -6,6 +6,7 @@ let dose = 0;
 
 
 
+
 btnCalcular.addEventListener('click', ()=>{
     let medida = document.getElementById('medida').value;
     console.log(medida);

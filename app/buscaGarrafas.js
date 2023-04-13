@@ -1,4 +1,4 @@
-const apiUrl = 'https://gist.githubusercontent.com/RudsonAbraao/31e20fe3e1323caf29efdf8b85a4524d/raw/afc81abeaed30ca82c92c75589baa26a22b4b22e/gordons.json';
+const apiUrl = 'https://gist.githubusercontent.com/RudsonAbraao/eee4709da3daf6b22c7e5c782ab7801e/raw/f7151096a846db9d1ef27a83e2d72ee69a6dd396/garrafas5.0.json';
 
 let bebidaSelecionada;
 let maiorDose = 0;

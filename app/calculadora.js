@@ -1,13 +1,15 @@
+const btnAddGrfCheia = document.getElementById('btnAddGrfCheia');
 const btnAdd = document.getElementById('btnAdd');
 const btnCalc = document.getElementById('btnCalc');
 const abaCalc = document.getElementById('abaCalc');
 const calcLista = document.getElementById('calcLista');
 const textoTotal = document.getElementById('textTotal');
-const btnAddGrfCheia = document.getElementById('btnAddGrfCheia');
 const input = document.getElementById('medida');
+
 let qntGarrafa = 0;
 let totalDoses = 0;
 let totalLitros=0;
+let maiorDose = 0;
 
 btnAddGrfCheia.addEventListener('click', addGarrafaCheia)
 
@@ -21,18 +23,17 @@ btnCalc.addEventListener('click', ()=>{
 function addGarrafaCalc(){
     qntGarrafa += 1;
     criaGarrafa();
-    contaDoseTotal();
-    mostraDoseTotal();
+    contaTotal();
+    mostraTotal();
     botaoDelete();
 };
 
 function addGarrafaCheia(){
-    console.log('addGarrafaCheia');
     qntGarrafa += 1;
     pegaMaiorDose();
     criaGarrafaCheia();
     contaDosecheia();
-    mostraDoseTotal();
+    mostraTotal();
     botaoDelete();
 }
 
@@ -58,13 +59,12 @@ function contaDosecheia(){
     totalDoses += maiorDose;
 }
 
-function contaDoseTotal(){
+function contaTotal(){
     totalDoses += dose;
-    console.log(totalDoses);
     totalLitros = (totalDoses*50)/1000;
 };
 
-function mostraDoseTotal(){
+function mostraTotal(){
     textoTotal.innerHTML = `
         Total: ${Number(totalDoses.toFixed(2))} Ds / ${Number(((totalDoses*50)/1000).toFixed(3))} L
     `
@@ -78,10 +78,9 @@ function botaoDelete(){
         botao.addEventListener('click',()=>{
             let elementoDelete = event.target.parentNode;
             let doseDelete = event.target.value;
-            console.log(doseDelete);
             totalDoses -= doseDelete;
             elementoDelete.remove();
-            mostraDoseTotal();
+            mostraTotal();
         } )
     });
 
@@ -93,7 +92,6 @@ function pegaMaiorDose(){
         dosesDaGarrafaSelecionada.push(dose.dose)
     });
     maiorDose = Math.max.apply(null, dosesDaGarrafaSelecionada);
-    console.log(maiorDose);
 }
 
 function zerarCalc(){
@@ -106,18 +104,7 @@ function zerarCalc(){
         <h2 class="resposta">Contém ... dose(s)</h2>
         <h2 class="resposta">Contém ... ml</h2>
     `
-
-
-
 };
-// let dosesDaGarrafaSelecionada = [];
-// console.log(bebida.doses);
-// bebida.doses.forEach(element => {
-//     dosesDaGarrafaSelecionada.push(element.dose)
-// });
-// maiordose = Math.max.apply(null, dosesDaGarrafaSelecionada );
-// console.log(dosesDaGarrafaSelecionada);
-// console.log(maiordose);
 
 
 

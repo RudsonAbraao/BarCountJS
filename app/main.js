@@ -2,6 +2,7 @@
 const elementoResultado = document.getElementById('calculoResposta');
 const btnCalcular = document.getElementById('btn-calcular');
 let dose = 0;
+let maiorMedida;
 
 
 
@@ -9,9 +10,7 @@ let dose = 0;
 
 btnCalcular.addEventListener('click', ()=>{
     let medida = document.getElementById('medida').value;
-    console.log(medida);
     dose = calculoMedida(medida,bebidaSelecionada);
-    console.log(bebidaSelecionada);
     resultadoNaTela(dose);
 });
 
@@ -24,17 +23,47 @@ function resultadoNaTela(dose){
 
 
 function calculoMedida(cm, bebida){
-    bebida.doses.forEach(dose => {
-        if(cm == dose.inicio){
-            console.log('deu certo');
-            doseDaGarrafa = dose.dose;
-            console.log(doseDaGarrafa);
-        } if(cm>dose.inicio && cm < dose.fim){
-            doseDaGarrafa = (cm - dose.inicio) / (dose.fim - dose.inicio) + dose.dose;
+    pegaMaiorMedida(bebida.doses)
+    // console.log(maiorMedida);
+    // bebida.doses.forEach(dose => {
+    //     if(cm == dose.inicio){
+    //         console.log('deu certo');
+    //         doseDaGarrafa = dose.dose;
+    //         console.log(doseDaGarrafa);
+    //     } if(cm>dose.inicio && cm < dose.fim){
+    //         doseDaGarrafa = (cm - dose.inicio) / (dose.fim - dose.inicio) + dose.dose;
+    //     }
+    // });
+    //-------------------------------------------------------------------
+    bebida.doses.forEach((element, index)=>{
+        let doseInicio = element.cm;
+        if(index < bebida.doses.length-1){
+            var doseFim = bebida.doses[index+1].cm;
         }
-    });
+        if(cm == doseInicio){
+            doseDaGarrafa = element.dose;
+        }
+        if(cm > doseInicio && cm < doseFim){
+            doseDaGarrafa = (cm - doseInicio) / (doseFim - doseInicio) + element.dose;
+        }
+        if(cm > maiorMedida || cm <= 0){
+            doseDaGarrafa = 0;
+        }
+    })
+
+
+
     return Number(doseDaGarrafa.toFixed(2))
 }
+
+function pegaMaiorMedida(array){
+    let medidas = [];
+    array.forEach(element => {
+        medidas.push(element.cm)
+    });
+    maiorMedida = Math.max.apply(null, medidas);
+}
+
 
 
 

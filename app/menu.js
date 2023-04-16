@@ -32,7 +32,6 @@ function addFunctionsBotoes(Botoes){
             bebida.innerHTML= botao.innerHTML;
             zerarCalc();
             buscaGarrafas(botao);
-            // addGarrafaCheia();
         })
     });
 }

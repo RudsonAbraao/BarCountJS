@@ -16,8 +16,8 @@ btnCalcular.addEventListener('click', ()=>{
 
 function resultadoNaTela(dose){
     elementoResultado.innerHTML =`
-    <h2 class="resposta">Contém ${Number(dose.toFixed(2))} dose(s)</h2>
-    <h2 class="resposta">Contém ${Number((dose*50).toFixed(2))} ml</h2>
+    <h2 class="resposta">Contém ≈ ${Number(dose.toFixed(2))} dose(s)</h2>
+    <h2 class="resposta">Contém ≈ ${Number((dose*50).toFixed(2))} ml</h2>
     `
 }
 

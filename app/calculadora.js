@@ -101,8 +101,8 @@ function zerarCalc(){
     calcLista.innerHTML = "";
     textoTotal.innerHTML = "Total: ... Ds / ... L";
     elementoResultado.innerHTML= `
-        <h2 class="resposta">Contém ... dose(s)</h2>
-        <h2 class="resposta">Contém ... ml</h2>
+        <h2 class="resposta">Contém ≈ ... dose(s)</h2>
+        <h2 class="resposta">Contém ≈ ... ml</h2>
     `
 };
 
